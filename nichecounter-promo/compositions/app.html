@@ -20,7 +20,7 @@
     .a-shot { position: absolute; left: 0; top: 0; width: 860px; height: auto; }
     /* rebuilt search field (same geometry/colours as the site, phone scale 2.205) */
     #a-bar { position: absolute; left: 48.5px; top: 123.5px; width: 763px; height: 97px; border-radius: 48.5px; }
-    #a-field { position: absolute; left: 80px; top: 6px; width: 640px; height: 85px; background: #1d1a16; }
+    #a-field { position: absolute; left: 80px; top: 6px; width: 640px; height: 85px; background: #1d1a16; opacity: 0; }
     #a-typed { position: absolute; left: 8px; top: 23px; font: 400 33px/1.2 "Hanken Grotesk", sans-serif; color: #f5f1e8; white-space: nowrap; }
     #a-typed span { display: none; }
     #a-caret { display: inline-block; width: 3px; height: 38px; margin-left: 2px; vertical-align: -6px; background: #f5f1e8; }
@@ -134,6 +134,7 @@
       tl.to("#a-tap1", { scale: 0.78, duration: 0.08, ease: "power4.in" }, 0.92);
       tl.to("#a-tap1", { opacity: 0, scale: 1.04, y: -30, duration: 0.2, ease: "power2.in" }, 1.0);
       tl.set("#a-ring", { opacity: 1 }, 1.0);
+      tl.set("#a-field", { opacity: 1 }, 1.0); // focus: placeholder gives way to the caret
       for (let i = 0; i < 6; i++) tl.set("#a-caret", { opacity: i % 2 ? 0 : 1 }, 1.0 + i * 0.27);
       tl.set("#a-caret", { opacity: 1 }, 1.55);
       document.querySelectorAll("#a-typed span").forEach((el, i) => tl.set(el, { display: "inline" }, 1.55 + i * 0.058));

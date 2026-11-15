@@ -89,10 +89,10 @@
       tl.fromTo("#p-col2", { y: 260 }, { y: -700, duration: 5, ease: "none" }, 0);
       tl.fromTo("#p-col3", { y: 40 }, { y: -400, duration: 5, ease: "none" }, 0);
       // entering from the hook's whip: field arrives moving up, blurred
-      tl.fromTo("#p-fieldin", { opacity: 0, filter: "blur(12px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3, ease: "power2.out" }, 0);
+      tl.fromTo("#p-fieldin", { opacity: 0.55, filter: "blur(10px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.24, ease: "power2.out" }, 0);
 
       // headline 1, per word blur-in, held still, blur-out
-      tl.fromTo("#p-l1 span", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power2.out", stagger: 0.08 }, 0.3);
+      tl.fromTo("#p-l1 span", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power2.out", stagger: 0.08 }, 0.12);
       tl.to("#p-l1", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 2.9);
       tl.set("#p-l2", { opacity: 1 }, 0);
       tl.fromTo("#p-l2 span", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power2.out", stagger: 0.08 }, 3.1);
