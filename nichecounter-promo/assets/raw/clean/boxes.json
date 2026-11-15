@@ -1,0 +1,86 @@
+{
+ "home_search": {
+  "x": 22,
+  "y": 56,
+  "w": 346,
+  "h": 44
+ },
+ "home_header": {
+  "x": 0,
+  "y": 0,
+  "w": 390,
+  "h": 113
+ },
+ "results_chip_asc": {
+  "x": 134.53125,
+  "y": 196.59375,
+  "w": 120.03125,
+  "h": 36
+ },
+ "results_default_cards": [
+  {
+   "t": "XR | −37% | XERJOFF | Renaissance | 164 € | 260 € | Professionnel · Neuf sous blister · 100 ml",
+   "x": 22,
+   "y": 376.59375,
+   "w": 168,
+   "h": 319.875
+  },
+  {
+   "t": "XR | −40% | XERJOFF | Renaissance | 157 € | 260 € | Professionnel · Neuf sous blister · 100 ml",
+   "x": 200,
+   "y": 376.59375,
+   "w": 168,
+   "h": 319.875
+  },
+  {
+   "t": "XR | −32% | XERJOFF | Renaissance | 178 € | 260 € | Professionnel · Neuf sous blister · 100 ml",
+   "x": 22,
+   "y": 706.46875,
+   "w": 168,
+   "h": 319.875
+  },
+  {
+   "t": "XR | −34% | XERJOFF | Renaissance | 171 € | 260 € | Professionnel · Neuf sous blister · 100 ml",
+   "x": 200,
+   "y": 706.46875,
+   "w": 168,
+   "h": 319.875
+  }
+ ],
+ "results_sorted_grid": {
+  "x": 22,
+  "y": 376.59375,
+  "w": 346,
+  "h": 649.75
+ },
+ "chips": {
+  "x": 22,
+  "y": 196.59375,
+  "w": 346,
+  "h": 124
+ },
+ "pd_brand": {
+  "x": 24,
+  "y": 702,
+  "w": 342,
+  "h": 16.5
+ },
+ "pd_protection": {
+  "x": 24,
+  "y": 1452.5,
+  "w": 342,
+  "h": 92
+ },
+ "pd_seller": {
+  "x": 24,
+  "y": 1176.5,
+  "w": 342,
+  "h": 90
+ },
+ "pd_price": {
+  "x": 24,
+  "y": 702,
+  "w": 342,
+  "h": 842.5
+ }
+}

@@ -1,15 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920, height=1080" />
+    <meta name="viewport" content="width=1080, height=1920" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
     <style>
-      /* Placeholders: replace all three with the film's own palette and display face. */
       :root {
-        --ground: #000;
-        --ink: #ffffff;
-        --font-display: sans-serif;
+        --ground: #14120f;
+        --ink: #f5f1e8;
       }
       * {
         margin: 0;
@@ -18,25 +16,36 @@
       }
       html,
       body {
-        margin: 0;
-        width: 1920px;
-        height: 1080px;
+        width: 1080px;
+        height: 1920px;
         overflow: hidden;
         background: var(--ground);
       }
       #root {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--font-display);
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
       }
-      #title {
-        color: var(--ink);
-        font-size: 72px;
-        font-weight: 600;
-        letter-spacing: -0.03em;
+      /* Film grain: one SVG noise tile, its offset stepped on the timeline (deterministic). */
+      #hf-vignette {
+        position: absolute; inset: 0; z-index: 40; pointer-events: none;
+        background: radial-gradient(ellipse at center, transparent 55%, rgba(8, 7, 5, 0.42) 100%);
+      }
+      #grain {
+        position: absolute;
+        inset: 0;
+        z-index: 50;
+        pointer-events: none;
+        overflow: hidden;
+      }
+      #grain-tex {
+        position: absolute;
+        inset: -256px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        background-size: 256px 256px;
+        opacity: 0.07;
+        mix-blend-mode: overlay;
       }
     </style>
   </head>
@@ -45,17 +54,93 @@
       id="root"
       data-composition-id="main"
       data-start="0"
-      data-duration="10"
-      data-width="1920"
-      data-height="1080"
+      data-duration="25"
+      data-width="1080"
+      data-height="1920"
+      data-fps="60"
+      data-motion-blur="on"
     >
-      <h1 id="title" class="clip" data-start="0" data-duration="10" data-track-index="0">Title</h1>
+      <div
+        id="hook"
+        data-composition-id="hook"
+        data-composition-src="compositions/hook.html"
+        data-start="0"
+        data-duration="3"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 1"
+      ></div>
+      <div
+        id="pain"
+        data-composition-id="pain"
+        data-composition-src="compositions/pain.html"
+        data-start="3"
+        data-duration="5"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 2"
+      ></div>
+      <div
+        id="app"
+        data-composition-id="app"
+        data-composition-src="compositions/app.html"
+        data-start="8"
+        data-duration="7.75"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 3"
+      ></div>
+      <div
+        id="trust"
+        data-composition-id="trust"
+        data-composition-src="compositions/trust.html"
+        data-start="15.75"
+        data-duration="4.05"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 4"
+      ></div>
+      <div
+        id="endcard"
+        data-composition-id="endcard"
+        data-composition-src="compositions/endcard.html"
+        data-start="19.3"
+        data-duration="5.7"
+        data-track-index="2"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 5"
+      ></div>
+
+      <!-- registry: vignette (6 % warm edge darkening on the dark scenes) -->
+      <div id="hf-vignette" class="clip" data-start="0" data-duration="19.5" data-track-index="3" data-layout-ignore></div>
+
+      <div id="grain" class="clip" data-start="0" data-duration="25" data-track-index="3" data-layout-ignore>
+        <div id="grain-tex"></div>
+      </div>
+
+      <!-- Final mix: VO (Kokoro ff_siwis) + code-synthesised music + sfx, made by scripts/mix.py -->
+      <audio id="mix" class="clip" data-start="0" data-duration="25" data-track-index="4" data-volume="1" src="assets/audio/mix.wav"></audio>
     </div>
     <script>
       const tl = gsap.timeline({ paused: true });
-      // Example: tl.fromTo("#title", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 0);
+      // grain: new offset every 2 frames at 60 fps, from a seeded LCG (no Math.random)
+      let s = 1234567;
+      const rnd = () => ((s = (s * 1103515245 + 12345) % 2147483648) / 2147483648);
+      for (let f = 0; f < 25 * 30; f++) {
+        tl.set("#grain-tex", { x: Math.round(rnd() * 256 - 128), y: Math.round(rnd() * 256 - 128) }, f / 30);
+      }
+      window.__timelines = window.__timelines || {};
       window.__timelines["main"] = tl;
-      tl.seek(0);
     </script>
   </body>
 </html>

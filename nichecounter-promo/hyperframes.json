@@ -9,5 +9,67 @@
   "media": {
     "autoProxy": true
   },
-  "authoringSkill": "hyperframes"
+  "authoringSkill": "hyperframes",
+  "registryItems": [
+    {
+      "name": "strikethrough-replace",
+      "type": "hyperframes:component",
+      "target": "compositions/components/strikethrough-replace.html"
+    },
+    {
+      "name": "number-wheel",
+      "type": "hyperframes:component",
+      "target": "compositions/components/number-wheel.html"
+    },
+    {
+      "name": "gesture-tap",
+      "type": "hyperframes:component",
+      "target": "compositions/components/gesture-tap.html"
+    },
+    {
+      "name": "svg-stroke-trace",
+      "type": "hyperframes:component",
+      "target": "compositions/components/svg-stroke-trace.html"
+    },
+    {
+      "name": "grain-overlay",
+      "type": "hyperframes:component",
+      "target": "compositions/components/grain-overlay.html"
+    },
+    {
+      "name": "zoom-through-transition",
+      "type": "hyperframes:component",
+      "target": "compositions/components/zoom-through-transition.html"
+    },
+    {
+      "name": "spring-pop",
+      "type": "hyperframes:component",
+      "target": "compositions/components/spring-pop.html"
+    },
+    {
+      "name": "kinetic-center-build",
+      "type": "hyperframes:component",
+      "target": "compositions/components/kinetic-center-build.html"
+    },
+    {
+      "name": "inline-highlight",
+      "type": "hyperframes:component",
+      "target": "compositions/components/inline-highlight.html"
+    },
+    {
+      "name": "device-frame-stage",
+      "type": "hyperframes:component",
+      "target": "compositions/components/device-frame-stage.html"
+    },
+    {
+      "name": "vignette",
+      "type": "hyperframes:component",
+      "target": "compositions/components/vignette.html"
+    },
+    {
+      "name": "shimmer-sweep",
+      "type": "hyperframes:component",
+      "target": "compositions/components/shimmer-sweep.html"
+    }
+  ]
 }
