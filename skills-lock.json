@@ -43,11 +43,32 @@
       "skillPath": "skills/hyperframes-registry/SKILL.md",
       "computedHash": "6ac664d7d7f2ffdf299136cffb1a9bbebe21fd2b9afa8e6f44cf0c7a2d3df3b6"
     },
+    "macro-analyst": {
+      "source": "Bitget-AI/bitget-signal",
+      "commit": "55004749ede7fc72431cdb4be9558d01a1b80d03",
+      "sourceType": "github",
+      "skillPath": "skills/macro-analyst/SKILL.md",
+      "computedHash": "08815d0fcffa601018be96c82d2f9895a6e96a8afb8032dba88595357c433c34"
+    },
+    "market-intel": {
+      "source": "Bitget-AI/bitget-signal",
+      "commit": "55004749ede7fc72431cdb4be9558d01a1b80d03",
+      "sourceType": "github",
+      "skillPath": "skills/market-intel/SKILL.md",
+      "computedHash": "7787ddb4665f3b3ff406706311364cf3b4264eff6c9b14e57468a861f05ace8d"
+    },
     "media-use": {
       "source": "heygen-com/hyperframes",
       "sourceType": "github",
       "skillPath": "skills/media-use/SKILL.md",
       "computedHash": "6577d52ec86706ab2b0fbd56ca0489d6d4a76e1459481ac08c60a1fbbd9c988b"
+    },
+    "news-briefing": {
+      "source": "Bitget-AI/bitget-signal",
+      "commit": "55004749ede7fc72431cdb4be9558d01a1b80d03",
+      "sourceType": "github",
+      "skillPath": "skills/news-briefing/SKILL.md",
+      "computedHash": "a466d22267a5b4956485773e9ea2f4eb3a88c571dc527a62beefdfe661883300"
     },
     "remotion-to-hyperframes": {
       "source": "heygen-com/hyperframes",
@@ -61,6 +82,13 @@
       "skillPath": "skills/reverse-any-video/SKILL.md",
       "computedHash": "2cefe479a595e0bdaaeae6a23c297992ac133c1dfd49dd64b01b3e28eee591f0"
     },
+    "sentiment-analyst": {
+      "source": "Bitget-AI/bitget-signal",
+      "commit": "55004749ede7fc72431cdb4be9558d01a1b80d03",
+      "sourceType": "github",
+      "skillPath": "skills/sentiment-analyst/SKILL.md",
+      "computedHash": "33dfd3eecfbbc7827fb6f7d72d319b38d5709fb3edec20b088f529e2b572fade"
+    },
     "slideshow": {
       "source": "heygen-com/hyperframes",
       "sourceType": "github",
@@ -72,6 +100,13 @@
       "sourceType": "github",
       "skillPath": "skills/style-sampling/SKILL.md",
       "computedHash": "cb49372a8bfd06f5478802f56febf2d25371fd3401e83957139ecf12e80e490b"
+    },
+    "technical-analysis": {
+      "source": "Bitget-AI/bitget-signal",
+      "commit": "55004749ede7fc72431cdb4be9558d01a1b80d03",
+      "sourceType": "github",
+      "skillPath": "skills/technical-analysis/SKILL.md",
+      "computedHash": "e3b9ece107918f4258728ccceaee352fe97d41296a120497d31db1270de7d977"
     }
   }
 }
