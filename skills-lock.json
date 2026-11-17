@@ -7,6 +7,76 @@
       "skillPath": "skills/caveman/SKILL.md",
       "computedHash": "b51af74aacdadbc3c2d6bb79f05db58dc521854b87f7ffabd48faf286a81ed31"
     },
+    "crypto-analyze": {
+      "source": "zubair-trabzada/ai-crypto-claude",
+      "commit": "2f82b76a769af96861ee55187bcc61c0930a6200",
+      "sourceType": "github",
+      "skillPath": "skills/crypto-analyze/SKILL.md",
+      "computedHash": "315385355471e4c6cda29eebb2b9f4852543e708b3708d475449d171cdbd795a"
+    },
+    "crypto-compare": {
+      "source": "zubair-trabzada/ai-crypto-claude",
+      "commit": "2f82b76a769af96861ee55187bcc61c0930a6200",
+      "sourceType": "github",
+      "skillPath": "skills/crypto-compare/SKILL.md",
+      "computedHash": "05208453786d3493d9eb7140c9f8c79661cd60bfeb36acfa0edadcf1058cc545"
+    },
+    "crypto-defi": {
+      "source": "zubair-trabzada/ai-crypto-claude",
+      "commit": "2f82b76a769af96861ee55187bcc61c0930a6200",
+      "sourceType": "github",
+      "skillPath": "skills/crypto-defi/SKILL.md",
+      "computedHash": "cbef42b7d9a3da56161e77ebbaad4419ff9b3bd376411f1b5f8eabce13e5c321"
+    },
+    "crypto-fundamental": {
+      "source": "zubair-trabzada/ai-crypto-claude",
+      "commit": "2f82b76a769af96861ee55187bcc61c0930a6200",
+      "sourceType": "github",
+      "skillPath": "skills/crypto-fundamental/SKILL.md",
+      "computedHash": "9038e69761945b04acf04a597d7821a201179a36a3be8cd68b01c8e82d218084"
+    },
+    "crypto-onchain": {
+      "source": "zubair-trabzada/ai-crypto-claude",
+      "commit": "2f82b76a769af96861ee55187bcc61c0930a6200",
+      "sourceType": "github",
+      "skillPath": "skills/crypto-onchain/SKILL.md",
+      "computedHash": "53e1f2079050ec6fb9de604f8ffb3b544b6e6c73f13e2bcb2cae8c02a7fb8e9d"
+    },
+    "crypto-quick": {
+      "source": "zubair-trabzada/ai-crypto-claude",
+      "commit": "2f82b76a769af96861ee55187bcc61c0930a6200",
+      "sourceType": "github",
+      "skillPath": "skills/crypto-quick/SKILL.md",
+      "computedHash": "d547892fa1e9e49c40d2d0a000bfab8ec5c4d303bbf6101a5a0b3925ca73a8ae"
+    },
+    "crypto-risk": {
+      "source": "zubair-trabzada/ai-crypto-claude",
+      "commit": "2f82b76a769af96861ee55187bcc61c0930a6200",
+      "sourceType": "github",
+      "skillPath": "skills/crypto-risk/SKILL.md",
+      "computedHash": "ffd9342af37dad9f83cd98573fade8b9a533313d23033579d27aaa65901430db"
+    },
+    "crypto-sentiment": {
+      "source": "zubair-trabzada/ai-crypto-claude",
+      "commit": "2f82b76a769af96861ee55187bcc61c0930a6200",
+      "sourceType": "github",
+      "skillPath": "skills/crypto-sentiment/SKILL.md",
+      "computedHash": "a512ddc5ede1f19a6c19fae77f36c31a6c5ddb06eba28b78334bd18bbd663d89"
+    },
+    "crypto-technical": {
+      "source": "zubair-trabzada/ai-crypto-claude",
+      "commit": "2f82b76a769af96861ee55187bcc61c0930a6200",
+      "sourceType": "github",
+      "skillPath": "skills/crypto-technical/SKILL.md",
+      "computedHash": "19681671330d60c03cf8a804c36524ffaf03aab2276eae023f64db763ccfc390"
+    },
+    "crypto-tokenomics": {
+      "source": "zubair-trabzada/ai-crypto-claude",
+      "commit": "2f82b76a769af96861ee55187bcc61c0930a6200",
+      "sourceType": "github",
+      "skillPath": "skills/crypto-tokenomics/SKILL.md",
+      "computedHash": "e659114b11c76cb22d518a8a9b65a0846294a4213327ca4308bd0ccab320b9d2"
+    },
     "figma": {
       "source": "heygen-com/hyperframes",
       "sourceType": "github",
