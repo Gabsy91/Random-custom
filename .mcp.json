@@ -2,7 +2,10 @@
   "mcpServers": {
     "bitget": {
       "command": "npx",
-      "args": ["-y", "@bitget-ai/bitget-agent-mcp"]
+      "args": ["-y", "@bitget-ai/bitget-agent-mcp"],
+      "env": {
+        "NODE_USE_ENV_PROXY": "1"
+      }
     }
   }
 }
