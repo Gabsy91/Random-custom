@@ -8,3 +8,7 @@ Rules:
 - Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
 - A committed graphify-out/graph.json is rewritten whole on every build, so a large diff to it in a pull request is expected. Do not flag it as churn or suggest skipping the graph rebuild or its hooks.
+
+## Codename: REVUE KRAKEN
+
+When the user writes **"REVUE KRAKEN"** (usually with a screenshot of their Kraken Pro wallet), read and execute `prompts/crypto-weekly-review.md` end to end. Use `crypto-journal.md` for history, then append a new dated entry and commit/push it to the current development branch.
