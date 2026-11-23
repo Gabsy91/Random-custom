@@ -113,3 +113,70 @@ New entrants flagged as traps: PEARL (listed 2026-11-13, spread 0.70 %), BLESS (
 - 2026-11-30 18:00 Europe/Paris (scheduled reminder). Then 2026-12-10.
 - Earlier if: BTC weekly close < $54,500 (Kraken week closes Wed), VVV fills, a JST order triggers.
 - Catalysts: 2026-11-25 PCE · 2026-12-04 NFP + NIGHT final thaw · 2026-12-06 HYPE unlock · 2026-12-09 FOMC · 2026-12-10 CPI.
+
+---
+
+## 2026-11-23 — REVUE KRAKEN #2 (evening check, ~22:03 UTC)
+
+### Snapshot (Kraken screenshot, 2026-11-23 22:03 UTC, total ≈ $930)
+
+| Asset | Qty | Value | Weight |
+|---|---|---|---|
+| BTC | 0.007332 | $449.00 | 48.3 % |
+| JST | 880.80 | $128.91 | 13.9 % |
+| PAXG | 0.02624 | $95.06 | 10.2 % |
+| TRX | 267.261934 | $82.72 | 8.9 % |
+| ETH | 0.04179 | $71.93 | 7.7 % |
+| HYPE | 0.92062 | $59.19 | 6.4 % |
+| USD (reserved by VVV buy order) | 36.40 | $36.40 | 3.9 % |
+| ADA | 47.077065 | $6.96 | 0.7 % |
+
+Diff vs review #1:
+- PAXG trim done: sold 0.01004 PAXG (plan was 0.009).
+- ADA sale still NOT executed (2nd time flagged).
+- VVV buy placed as 1.5826 VVV @ $23.00 ($36.40), not @ $22.00 / $40. Not filled (VVV low since placement $24.197).
+- JST orders unchanged; nothing triggered (JST range since #1: $0.1459–0.1468).
+
+### Kraken data (2026-11-23 ~22:10 UTC, api.kraken.com)
+
+| Asset | Price | RSI14 D / W | vs EMA20/50/200 (D) | ATR % D | 30d |
+|---|---|---|---|---|---|
+| BTC | $61,199 | 26.9 / 35.4 | below all | 5.7 | -24.2 % |
+| ETH | $1,719 | 29.8 / 35.9 | below all | 7.2 | -27.0 % |
+| HYPE | $64.14 | 36.1 / 45.9 | below all | 9.1 | -16.3 % |
+| TRX | $0.3092 | 44.4 / 39.2 | below all | 2.0 | -6.0 % |
+| JST | $0.1462 | 56.8 / 75.6 | above all | 2.8 | +3.5 % (Kraken 24h vol only ~$40k) |
+| PAXG | $3,622 | 32.7 / 29.1 | below all | 2.6 | -9.4 % (52w low $3,489.65) |
+| VVV | $24.45 | 56.7 / 59.1 | above all | 10.8 | +1.1 % (7d +20.5 %) |
+| ADA | $0.1474 | 30.5 / 34.3 | below all | 7.4 | -29.1 % |
+
+- 90d daily-return correlation to BTC: ETH 0.93, HYPE 0.58, PAXG 0.54, VVV 0.38, TRX 0.04, JST 0.03. Portfolio 0.94.
+- Scan: 36 Kraken USD pairs ≥ $1.5M/24h; only NIGHT, JST, VVV, DRV positive on 30d. No new candidate beats VVV. Traps: NIGHT (thaw ~Dec 4), DRV (dilution), XMR/ZEC (privacy, EU AMLR), PEPE/PUMP/USELESS (memes), QNT (volume fading, 20d/60d 0.39).
+- Deep dive not rerun: review #1 scores (same day, < 6 h old) reused.
+- Regime: RISK-OFF, oversold (carried from #1; web search found no fresher macro data).
+
+### Trade plan
+
+1. Sell all ADA (47.077065) on ADA/USD, limit post-only @ $0.1475.
+2. Keep VVV buy 1.5826 @ $23.00 (daily EMA20/50 support $22.1–22.4). On fill: sell limit 1.5826 VVV @ $29.00 (TP); stop stays mental.
+3. Nothing else.
+
+### Stops and targets
+
+| Asset | Stop (weekly close below) | Take-profit |
+|---|---|---|
+| BTC | $54,500 | $75,000 |
+| ETH | $1,500 | $2,140 |
+| HYPE | $52 | $80 |
+| VVV | $18.30 | $29.00 |
+| PAXG | $3,450 (new, mental: sell half) | — |
+| TRX | $0.2950 (new, mental) | — |
+| JST | order: stop 440.8 @ $0.12 | order: sell 440 @ $0.20 |
+
+- Max loss if all stops hit ≈ $108 (≈ 11.6 % of wallet); weekly-close stops can gap lower.
+
+### Next review
+
+- 2026-11-30 18:00 Europe/Paris (already scheduled). Then 2026-12-10.
+- Earlier if: VVV fills, a JST order triggers, BTC weekly close < $54,500, PAXG < $3,450.
+- Catalysts: 2026-11-25 PCE · 2026-12-04 NFP + NIGHT thaw · 2026-12-06 HYPE unlock · 2026-12-09 FOMC · 2026-12-10 CPI.
