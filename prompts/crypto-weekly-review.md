@@ -14,7 +14,7 @@ Attached: screenshot(s) of my current Kraken Pro wallet (and open orders if incl
 ## 1. Data (facts first)
 - Source of truth for prices: Kraken public API (`api.kraken.com` is allowed): `AssetPairs`, `Ticker`, `OHLC` (1440 and 10080), `Depth`. Sleep ~1.1 s between OHLC calls.
 - Verify every asset held or proposed has an ONLINE spot pair on Kraken (EUR/USD/USDC). Pair listed ≠ available in the EU: flag privacy coins and anything MiCA-restricted for EU clients.
-- Write scripts/data only in the session scratchpad. Run Python with `-I` and `PYTHONDONTWRITEBYTECODE=1` (no `__pycache__` in the repo).
+- Write scripts/data only in the session scratchpad. Run Python with `-I -B` (`-I` ignores PYTHONDONTWRITEBYTECODE; `-B` prevents `__pycache__` in the repo).
 - If a host or tool is blocked, say what is missing in one line. Never guess a number.
 
 ## 2. Macro regime: risk-on or risk-off?
