@@ -180,3 +180,21 @@ Diff vs review #1:
 - 2026-11-30 18:00 Europe/Paris (already scheduled). Then 2026-12-10.
 - Earlier if: VVV fills, a JST order triggers, BTC weekly close < $54,500, PAXG < $3,450.
 - Catalysts: 2026-11-25 PCE · 2026-12-04 NFP + NIGHT thaw · 2026-12-06 HYPE unlock · 2026-12-09 FOMC · 2026-12-10 CPI.
+
+---
+
+## 2026-11-26 — VVV order check (/crypto-analyze)
+
+- VVV/USD $27.07 (Kraken, 2026-11-26 ~19:50 UTC); buy 1.5826 @ $23.00 now 15 % away, unfilled.
+- Bitget VVVUSDT perp (Bitget MCP, first use): funding +0.005 %/4h, OI ~158k VVV (~$4.3M) — not crowded.
+- Composite 69/100 (on-chain 68 / tokenomics 69 / sentiment 68 / technical 68 / fundamental 70). Grade B.
+- Notes: emissions 2M VVV/yr (~4.1 % of 48.96M circ); burns offset only part of it. Team vesting ~0.31M ~2026-12-27 (< 2 % circ, no red flag). Investor unlocks from ~Jul 2027. Top-100 wallets ~98 % of supply.
+- Technical: 24h spike to $30.63 rejected. Supports $26.1 / $24.2–24.6 / $22.9–23.4 (daily EMA20/50). $23 fill odds ~25–30 % in 1–2 weeks.
+
+### Plan
+
+1. Cancel buy 1.5826 VVV @ $23.00.
+2. Buy limit post-only 0.74286 VVV @ $24.50 (~$18.20).
+3. Buy limit post-only 0.77778 VVV @ $23.40 (~$18.20).
+- Mental stop: daily close < $21.10. TP: sell half @ $29.30, rest @ $34.00 (place after fills).
+- Do not chase above $27. If daily close > $30.63, wait for a retest of ~$29.3 instead.
